@@ -1,26 +1,15 @@
 {
     "env": {
-        "browser": true,
+        "browser": true, // Tell eslint parser to allow all brower API
         "es2021": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "standard"
-    ],
-    "parser": "@typescript-eslint/parser",
+    "extends": "eslint:recommended",
+    "plugins": ["promise"],
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module" //By default script is used to load one file into another file.. it will allow to esModule
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
     "rules": {
-        "no-unused-vars": "warn",
-        "no-console": "warn"
+        "promise/catch-or-return": "error"
     }
 }
