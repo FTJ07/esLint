@@ -1,5 +1,5 @@
 # Config file details:
-    ## Environment:
+    ** Environment **:
 
 
 # Difference between config and plugin
