@@ -1,6 +1,6 @@
 {
     "env": {
-        "browser": true, // Tell eslint parser to allow all brower API
+        "browser": true, // Tell eslint parser to allow all browser API so that it don't throw error
         "es2021": true
     },
     "extends": "eslint:recommended",
@@ -8,6 +8,9 @@
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module" //By default script is used to load one file into another file.. it will allow to esModule
+    },
+    "globals": {
+        "require": false 
     },
     "rules": {
         "promise/catch-or-return": "error"
