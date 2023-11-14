@@ -6,7 +6,7 @@
     "extends": "eslint:recommended",
     "plugins": ["promise"],
     "parserOptions": {
-        "ecmaVersion": "latest",
+        "ecmaVersion": "latest", // To support es module syntax
         "sourceType": "module" //By default script is used to load one file into another file.. it will allow to esModule
     },
     "globals": {
